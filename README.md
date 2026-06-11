@@ -153,13 +153,6 @@ python app.py
 ```
 瀏覽器開啟 **http://127.0.0.1:7860** ,輸入主題即可生成。
 
-### 6. 不啟動 App 也想驗證流程?
-
-```bash
-python scripts/smoke_test.py
-```
-此測試用假的 LLM 回應 + 佔位生成器跑完整條管線,**完全不需 GPU 或 API key**,輸出會存到 `assets/outputs/`。
-
 ---
 
 ## 取得貼圖風格 LoRA
