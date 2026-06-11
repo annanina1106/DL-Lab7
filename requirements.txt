@@ -1,0 +1,30 @@
+# =============================================================
+#  隨手貼 StickerForge — Python 依賴清單
+#  安裝:  pip install -r requirements.txt
+# =============================================================
+
+# ----- 核心 (一定要裝;只裝這幾個就能用 LLM + 佔位生成器跑完整流程) -----
+openai>=1.30          # 統一的 LLM 客戶端 (OpenAI 相容,支援 Ollama/OpenRouter/Big Pickle)
+gradio>=4.20          # 互動式 Web App (程式已相容 4.x / 5.x / 6.x)
+Pillow>=10.0          # 影像處理 (後處理、佔位生成、疊字)
+numpy>=1.24           # 向量運算 (RAG 餘弦相似度)
+python-dotenv>=1.0    # 讀取 .env 設定
+
+# ----- RAG 語意檢索 (強烈建議;未安裝會自動降級為關鍵字檢索) -----
+sentence-transformers>=2.6   # 預設模型 BAAI/bge-small-zh-v1.5 (中文最佳化, 約 100MB)
+
+# ----- 影像生成:擴散模型 (需要 GPU;未安裝則使用佔位生成器) -----
+# ⚠️  torch 請「先」依你的 CUDA 版本到 https://pytorch.org/get-started 安裝對應 wheel,
+#     再安裝以下其餘套件。例如 CUDA 12.1:
+#         pip install torch --index-url https://download.pytorch.org/whl/cu121
+torch>=2.1
+diffusers>=0.27
+transformers>=4.40
+accelerate>=0.30
+safetensors>=0.4
+
+# ----- 後處理:自動去背 (未安裝則略過去背) -----
+rembg>=2.0            # 底層 U2Net;會一併帶入 onnxruntime
+
+# ----- 選用:推論加速 (安裝需與 torch/CUDA 版本相符,可略過) -----
+# xformers

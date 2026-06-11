@@ -1,0 +1,24 @@
+name: stickerforge
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  # --- 透過 conda 安裝 PyTorch (含 CUDA);若無 GPU 可改 cpuonly ---
+  - pytorch>=2.1
+  - torchvision
+  - pytorch-cuda=12.1   # 無 GPU 時請移除此行,並改加 cpuonly
+  - pip:
+      - openai>=1.30
+      - gradio>=4.20
+      - Pillow>=10.0
+      - numpy>=1.24
+      - python-dotenv>=1.0
+      - sentence-transformers>=2.6
+      - diffusers>=0.27
+      - transformers>=4.40
+      - accelerate>=0.30
+      - safetensors>=0.4
+      - rembg>=2.0

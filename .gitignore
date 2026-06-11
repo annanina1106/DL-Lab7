@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.Python
+venv/
+env/
+.venv/
+
+# 環境變數 (含金鑰,切勿上傳)
+.env
+
+# 快取與輸出
+.cache/
+assets/outputs/
+*.zip
+
+# 自帶字型 (體積大,通常不上傳;改用系統字型或 FONT_PATH)
+assets/fonts/*.ttf
+assets/fonts/*.ttc
+assets/fonts/*.otf
+
+# 模型權重
+*.safetensors
+*.ckpt
+*.bin
+*.pth
+
+# 作業系統
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
