@@ -6,7 +6,7 @@
 
 ---
 
-## 📌 專題亮點與技術對應
+## 專題亮點與技術對應
 
 本專題同時涵蓋作業要求的 **兩大技術領域**,對應如下:
 
@@ -23,7 +23,7 @@
 
 ---
 
-## 🏗️ 系統架構
+## 系統架構
 
 ```mermaid
 flowchart LR
@@ -59,7 +59,7 @@ LLM 階段輸出統一為結構化 JSON 陣列,每個元素為
 
 ---
 
-## 📁 專案結構
+## 專案結構
 
 ```
 stickerforge/
@@ -94,7 +94,7 @@ stickerforge/
 
 ---
 
-## 🚀 在本地端執行
+## 在本地端執行
 
 ### 1. 取得程式碼與建立環境
 
@@ -162,7 +162,7 @@ python scripts/smoke_test.py
 
 ---
 
-## 🎨 取得貼圖風格 LoRA
+## 取得貼圖風格 LoRA
 
 本系統的影像品質取決於所掛載的 LoRA。建議到 [Civitai](https://civitai.com) 或 [HuggingFace](https://huggingface.co) 搜尋關鍵字如 `sticker`、`chibi`、`flat illustration`、`LINE sticker` 等風格 LoRA,下載 `.safetensors` 後:
 
@@ -176,7 +176,7 @@ LORA_SCALE=0.85
 
 ---
 
-## 🧩 使用說明
+## 使用說明
 
 1. **主題 / 情境**(必填):描述你想要的貼圖主軸。
 2. **角色設定**(選填):指定角色外觀以維持整組一致;留空則由 AI 設計並自動保持一致。
@@ -186,9 +186,9 @@ LORA_SCALE=0.85
 
 ---
 
-## 🔧 疑難排解
+## 疑難排解
 
-| 症狀 | 原因與解法 |
+| 問題 | 原因與解法 |
 |---|---|
 | 狀態列「影像生成:佔位生成器」 | 未偵測到 GPU 或未裝 `torch`/`diffusers`。安裝後重啟即切換為真實作畫 |
 | 狀態列「RAG:關鍵字檢索」 | 未安裝 `sentence-transformers`,屬正常降級;安裝即啟用語意檢索 |
@@ -200,11 +200,10 @@ LORA_SCALE=0.85
 
 ---
 
-## 🙏 致謝與授權
+## 工具
 
 - 影像生成:[🤗 Diffusers](https://github.com/huggingface/diffusers)、Stable Diffusion
 - 去背:[rembg](https://github.com/danielgatis/rembg)(U2Net)
 - 嵌入:[BAAI/bge-small-zh](https://huggingface.co/BAAI/bge-small-zh-v1.5)
 - 介面:[Gradio](https://www.gradio.app/)
 
-本專題為課程作業用途。所掛載之 LoRA / 模型權重請遵守各自的授權條款。
