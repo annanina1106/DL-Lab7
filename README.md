@@ -4,7 +4,7 @@
 
 輸入一句主題情境(例如「一隻慵懶橘貓的日常心情」),系統就會自動產出 **一整組風格一致、情緒各異** 的貼圖 —— 由大型語言模型發想文案與繪圖概念,擴散模型負責作畫,再經自動去背、白色描邊、文案疊字,輸出可直接使用的透明 PNG 貼圖包。
 
-<img width="1337" height="953" alt="image" src="https://github.com/user-attachments/assets/01b2ae34-2626-4e0b-afc1-2777b445ab50" />
+<img width="1094" height="961" alt="螢幕擷取畫面 2026-06-11 112537" src="https://github.com/user-attachments/assets/0f3ec1c0-ea1b-49fc-aeb2-93b3794923eb" />
 
 ---
 
