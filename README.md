@@ -151,7 +151,7 @@ python scripts/check_setup.py
 ```bash
 python app.py
 ```
-瀏覽器開啟 **http://127.0.0.1:7860**,輸入主題即可生成。
+瀏覽器開啟 **http://127.0.0.1:7860** ,輸入主題即可生成。
 
 ### 6. 不啟動 App 也想驗證流程?
 
